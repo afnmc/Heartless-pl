@@ -1,0 +1,73 @@
+settings:
+  global_cooldown_ms: 800
+  max_charge: 10
+  charge_regen_ticks: 60
+  charge_regen_amount: 1
+  enable_bedrock_support: true
+  log_skill_usage: false
+
+disabled_worlds:
+  - "lobby"
+  - "spawn"
+
+weapons:
+  Voidcleaver:
+    enabled: true
+    damage_multiplier: 1.0
+    cooldown_multiplier: 1.0
+  Soulripper:
+    enabled: true
+    damage_multiplier: 1.0
+    cooldown_multiplier: 1.0
+  Ashbrand:
+    enabled: true
+    damage_multiplier: 1.0
+    cooldown_multiplier: 1.0
+  CrimsonRequiem:
+    enabled: true
+    damage_multiplier: 1.0
+    cooldown_multiplier: 1.0
+  ShadowstepDagger:
+    enabled: true
+    damage_multiplier: 1.0
+    cooldown_multiplier: 1.0
+  NecroticStaff:
+    enabled: true
+    damage_multiplier: 1.0
+    cooldown_multiplier: 1.0
+  HellflireBlade:
+    enabled: true
+    damage_multiplier: 1.0
+    cooldown_multiplier: 1.0
+  AbyssalGaze:
+    enabled: true
+    damage_multiplier: 1.0
+    cooldown_multiplier: 1.0
+  GraveDigger:
+    enabled: true
+    damage_multiplier: 1.0
+    cooldown_multiplier: 1.0
+  PhantomEdge:
+    enabled: true
+    damage_multiplier: 1.0
+    cooldown_multiplier: 1.0
+  CursedCrown:
+    enabled: true
+    damage_multiplier: 1.0
+    cooldown_multiplier: 1.0
+  Bonecrusher:
+    enabled: true
+    damage_multiplier: 1.0
+    cooldown_multiplier: 1.0
+  Eclipse:
+    enabled: true
+    damage_multiplier: 1.0
+    cooldown_multiplier: 1.0
+  Demonheart:
+    enabled: true
+    damage_multiplier: 1.0
+    cooldown_multiplier: 1.0
+  BloodmoonScythe:
+    enabled: true
+    damage_multiplier: 1.0
+    cooldown_multiplier: 1.0
