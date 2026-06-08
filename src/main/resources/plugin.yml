@@ -3,7 +3,7 @@ version: 1.0.0
 main: com.rpg.heartless.HeartlessPlugin
 api-version: '1.21'
 description: Dark RPG weapon skill system
-authors: [Afn_mc]
+authors: [Afn_mc,AztheraSMP]
 softdepend: [floodgate, Geyser-Spigot]
 
 commands:
