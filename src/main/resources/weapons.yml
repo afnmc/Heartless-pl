@@ -1,0 +1,783 @@
+weapons:
+  Voidcleaver:
+    name: "§4§lVoidcleaver"
+    rarity: "§6§lLEGENDARY"
+    material: NETHERITE_SWORD
+    custom_model_data: 1001
+    enchant_glow: true
+    lore:
+      - "§7A blade forged at the edge of reality."
+      - "§7It does not cut flesh — it cuts existence."
+      - "§4Passive: §cVoid aura devours nearby light"
+    passive:
+      particle: SQUID_INK
+      sound: BLOCK_SOUL_SAND_PLACE
+    l_click:
+      name: "Void Slash"
+      effect_type: STRIKE
+      damage: 7.0
+      range: 4.0
+      charge_cost: 1
+      cooldown: 4
+      effects:
+        - "SLOWNESS:2:60"
+      particle: SOUL
+      sound_cast: ENTITY_WITHER_SKELETON_STEP
+      sound_impact: ENTITY_PLAYER_ATTACK_CRIT
+    r_click:
+      name: "Shadow Blink"
+      effect_type: BLINK
+      damage: 0.0
+      range: 7.0
+      charge_cost: 2
+      cooldown: 10
+      effects: []
+      particle: PORTAL
+      sound_cast: ENTITY_ENDERMAN_TELEPORT
+    ultimate:
+      name: "Abyssal Collapse"
+      effect_type: AOE
+      damage: 11.0
+      range: 6.0
+      charge_cost: 5
+      cooldown: 65
+      effects:
+        - "WITHER:2:100"
+        - "BLINDNESS:1:80"
+      particle: ASH
+      sound_cast: ENTITY_WITHER_SPAWN
+      sound_impact: ENTITY_WITHER_SHOOT
+      sound_echo: BLOCK_BEACON_DEACTIVATE
+
+  Soulripper:
+    name: "§5§lSoulripper"
+    rarity: "§5§lEPIC"
+    material: NETHERITE_AXE
+    custom_model_data: 1002
+    enchant_glow: true
+    lore:
+      - "§7Each swing leaves a scar on the soul."
+      - "§7Those struck forget why they fight."
+      - "§5Passive: §dWither aura on nearby enemies"
+    passive:
+      particle: SOUL
+      sound: BLOCK_SOUL_SAND_PLACE
+    l_click:
+      name: "Soul Rend"
+      effect_type: STRIKE
+      damage: 7.0
+      range: 4.0
+      charge_cost: 1
+      cooldown: 5
+      effects:
+        - "WEAKNESS:1:80"
+        - "WITHER:1:60"
+      particle: SOUL_FIRE_FLAME
+      sound_cast: ITEM_AXE_SCRAPE
+      sound_impact: ENTITY_PLAYER_ATTACK_CRIT
+    r_click:
+      name: "Gravity Pull"
+      effect_type: PULL
+      damage: 3.0
+      range: 8.0
+      charge_cost: 2
+      cooldown: 12
+      effects:
+        - "SLOWNESS:2:60"
+      particle: REVERSE_PORTAL
+      sound_cast: ENTITY_ENDERMAN_SCREAM
+    ultimate:
+      name: "Harvest of Souls"
+      effect_type: LIFESTEAL_AOE
+      damage: 12.0
+      range: 6.0
+      charge_cost: 5
+      cooldown: 75
+      effects:
+        - "LEVITATION:1:40"
+        - "SLOWNESS:3:80"
+      particle: SOUL
+      sound_cast: ENTITY_WITHER_SPAWN
+      sound_impact: ENTITY_GENERIC_EXPLODE
+      sound_echo: BLOCK_BEACON_DEACTIVATE
+
+  Ashbrand:
+    name: "§7§lAshbrand"
+    rarity: "§3§lRARE"
+    material: NETHERITE_SWORD
+    custom_model_data: 1003
+    enchant_glow: false
+    lore:
+      - "§7Forged from the ashes of a fallen city."
+      - "§7Leaves smoldering ruins wherever it swings."
+      - "§6Passive: §eFlame trail on movement"
+    passive:
+      particle: FLAME
+      sound: BLOCK_FIRE_AMBIENT
+    l_click:
+      name: "Ember Strike"
+      effect_type: STRIKE
+      damage: 6.0
+      range: 4.0
+      charge_cost: 1
+      cooldown: 3
+      effects:
+        - "POISON:1:60"
+      particle: LAVA
+      sound_cast: ITEM_FLINTANDSTEEL_USE
+      sound_impact: BLOCK_FIRE_EXTINGUISH
+    r_click:
+      name: "Ash Dash"
+      effect_type: BLINK
+      damage: 2.0
+      range: 6.0
+      charge_cost: 2
+      cooldown: 8
+      effects: []
+      particle: FLAME
+      sound_cast: ENTITY_BLAZE_SHOOT
+    ultimate:
+      name: "Cinder Storm"
+      effect_type: AOE
+      damage: 9.0
+      range: 7.0
+      charge_cost: 5
+      cooldown: 55
+      effects:
+        - "POISON:2:100"
+        - "SLOWNESS:2:80"
+      particle: FIREWORKS_SPARK
+      sound_cast: ENTITY_BLAZE_AMBIENT
+      sound_impact: ENTITY_GENERIC_EXPLODE
+      sound_echo: BLOCK_FIRE_AMBIENT
+
+  CrimsonRequiem:
+    name: "§c§lCrimson Requiem"
+    rarity: "§6§lLEGENDARY"
+    material: NETHERITE_HOE
+    custom_model_data: 1004
+    enchant_glow: true
+    lore:
+      - "§7A requiem played in blood and sacrifice."
+      - "§7The more pain given, the more power returned."
+      - "§cPassive: §4Life drain on every 3rd hit"
+    passive:
+      particle: BLOCK_CRUMBLE
+      sound: ENTITY_ZOMBIE_HURT
+    l_click:
+      name: "Blood Sweep"
+      effect_type: AOE
+      damage: 6.0
+      range: 3.5
+      charge_cost: 1
+      cooldown: 4
+      effects:
+        - "WEAKNESS:1:60"
+      particle: BLOCK_CRUMBLE
+      sound_cast: ENTITY_PLAYER_ATTACK_SWEEP
+      sound_impact: ENTITY_PLAYER_ATTACK_CRIT
+    r_click:
+      name: "Crimson Tide"
+      effect_type: LIFESTEAL_AOE
+      damage: 5.0
+      range: 5.0
+      charge_cost: 2
+      cooldown: 14
+      effects: []
+      particle: DUST
+      sound_cast: ENTITY_ZOMBIE_ATTACK_IRON_DOOR
+    ultimate:
+      name: "Final Requiem"
+      effect_type: AOE
+      damage: 12.0
+      range: 8.0
+      charge_cost: 5
+      cooldown: 80
+      effects:
+        - "BLINDNESS:1:100"
+        - "WEAKNESS:2:120"
+        - "WITHER:1:80"
+      particle: DUST
+      sound_cast: ENTITY_WITHER_SPAWN
+      sound_impact: ENTITY_ZOMBIE_VILLAGER_CONVERTED
+      sound_echo: ENTITY_PHANTOM_DEATH
+
+  ShadowstepDagger:
+    name: "§8§lShadowstep Dagger"
+    rarity: "§5§lEPIC"
+    material: NETHERITE_SWORD
+    custom_model_data: 1005
+    enchant_glow: true
+    lore:
+      - "§7A dagger that exists between shadows."
+      - "§7Strike before they see you."
+      - "§8Passive: §7Invisibility flicker near targets"
+    passive:
+      particle: SQUID_INK
+      sound: ENTITY_ENDERMAN_AMBIENT
+    l_click:
+      name: "Shadow Stab"
+      effect_type: STRIKE
+      damage: 8.0
+      range: 3.0
+      charge_cost: 1
+      cooldown: 3
+      effects:
+        - "BLINDNESS:1:40"
+      particle: SQUID_INK
+      sound_cast: ENTITY_ENDERMAN_STARE
+      sound_impact: ENTITY_PLAYER_ATTACK_CRIT
+    r_click:
+      name: "Phantom Step"
+      effect_type: BLINK
+      damage: 0.0
+      range: 8.0
+      charge_cost: 2
+      cooldown: 10
+      effects:
+        - "SPEED:2:60"
+      particle: SMOKE
+      sound_cast: ENTITY_ENDERMAN_TELEPORT
+    ultimate:
+      name: "Death from the Shadows"
+      effect_type: STRIKE
+      damage: 12.0
+      range: 15.0
+      charge_cost: 5
+      cooldown: 60
+      effects:
+        - "BLINDNESS:1:100"
+        - "SLOWNESS:3:80"
+      particle: SQUID_INK
+      sound_cast: ENTITY_WITHER_SKELETON_AMBIENT
+      sound_impact: ENTITY_PLAYER_ATTACK_CRIT
+      sound_echo: ENTITY_ENDERMAN_DEATH
+
+  NecroticStaff:
+    name: "§2§lNecrotic Staff"
+    rarity: "§6§lLEGENDARY"
+    material: STICK
+    custom_model_data: 1006
+    enchant_glow: true
+    lore:
+      - "§7Carved from bone of the first undead."
+      - "§7Commands the decay of all living things."
+      - "§2Passive: §aWither aura poisons nearby foes"
+    passive:
+      particle: SOUL_FIRE_FLAME
+      sound: ENTITY_WITHER_AMBIENT
+    l_click:
+      name: "Necrotic Bolt"
+      effect_type: STRIKE
+      damage: 5.0
+      range: 10.0
+      charge_cost: 1
+      cooldown: 4
+      effects:
+        - "WITHER:2:80"
+        - "POISON:1:60"
+      particle: SOUL_FIRE_FLAME
+      sound_cast: ENTITY_WITHER_SHOOT
+      sound_impact: ENTITY_WITHER_HURT
+    r_click:
+      name: "Death Shroud"
+      effect_type: AOE
+      damage: 0.0
+      range: 4.0
+      charge_cost: 2
+      cooldown: 15
+      effects:
+        - "WITHER:1:120"
+        - "SLOWNESS:2:80"
+      particle: SOUL
+      sound_cast: ENTITY_WITHER_AMBIENT
+    ultimate:
+      name: "Plague of the Dead"
+      effect_type: AOE
+      damage: 10.0
+      range: 9.0
+      charge_cost: 5
+      cooldown: 70
+      effects:
+        - "WITHER:3:120"
+        - "WEAKNESS:2:100"
+        - "NAUSEA:1:100"
+      particle: ASH
+      sound_cast: ENTITY_WITHER_SPAWN
+      sound_impact: ENTITY_WITHER_DEATH
+      sound_echo: BLOCK_BEACON_DEACTIVATE
+
+  HellflireBlade:
+    name: "§6§lHellfire Blade"
+    rarity: "§5§lEPIC"
+    material: NETHERITE_SWORD
+    custom_model_data: 1007
+    enchant_glow: true
+    lore:
+      - "§7Tempered in the ninth circle of the nether."
+      - "§7Burns with a heat that ignores armor."
+      - "§6Passive: §eLeave fire patches on the ground"
+    passive:
+      particle: FLAME
+      sound: BLOCK_FIRE_AMBIENT
+    l_click:
+      name: "Hellfire Slash"
+      effect_type: STRIKE
+      damage: 7.0
+      range: 4.0
+      charge_cost: 1
+      cooldown: 4
+      effects:
+        - "POISON:1:80"
+      particle: FLAME
+      sound_cast: ITEM_FLINTANDSTEEL_USE
+      sound_impact: ENTITY_BLAZE_HURT
+    r_click:
+      name: "Inferno Dash"
+      effect_type: BLINK
+      damage: 3.0
+      range: 6.0
+      charge_cost: 2
+      cooldown: 11
+      effects: []
+      particle: LAVA
+      sound_cast: ENTITY_BLAZE_SHOOT
+    ultimate:
+      name: "Gates of Hell"
+      effect_type: AOE
+      damage: 11.0
+      range: 7.0
+      charge_cost: 5
+      cooldown: 65
+      effects:
+        - "POISON:2:100"
+        - "WEAKNESS:1:80"
+      particle: FIREWORKS_SPARK
+      sound_cast: ENTITY_GHAST_SHOOT
+      sound_impact: ENTITY_GENERIC_EXPLODE
+      sound_echo: ENTITY_GHAST_DEATH
+
+  AbyssalGaze:
+    name: "§9§lAbyssal Gaze"
+    rarity: "§3§lRARE"
+    material: BOW
+    custom_model_data: 1008
+    enchant_glow: false
+    lore:
+      - "§7The arrow knows where the heart hides."
+      - "§7Once fired, fate cannot be avoided."
+      - "§9Passive: §3Arrows inflict Glowing on targets"
+    passive:
+      particle: SOUL
+      sound: ENTITY_ARROW_HIT_PLAYER
+    l_click:
+      name: "Void Arrow"
+      effect_type: STRIKE
+      damage: 6.0
+      range: 20.0
+      charge_cost: 1
+      cooldown: 4
+      effects:
+        - "GLOWING:1:100"
+        - "SLOWNESS:1:60"
+      particle: PORTAL
+      sound_cast: ENTITY_ARROW_SHOOT
+      sound_impact: ENTITY_ARROW_HIT
+    r_click:
+      name: "Abyss Mark"
+      effect_type: STRIKE
+      damage: 3.0
+      range: 15.0
+      charge_cost: 2
+      cooldown: 12
+      effects:
+        - "GLOWING:1:200"
+        - "WEAKNESS:1:100"
+      particle: SQUID_INK
+      sound_cast: ENTITY_ARROW_SHOOT
+    ultimate:
+      name: "Arrow Rain of Despair"
+      effect_type: AOE
+      damage: 10.0
+      range: 8.0
+      charge_cost: 5
+      cooldown: 60
+      effects:
+        - "BLINDNESS:1:80"
+        - "SLOWNESS:2:100"
+      particle: SOUL_FIRE_FLAME
+      sound_cast: ENTITY_WITHER_SHOOT
+      sound_impact: ENTITY_ARROW_HIT
+      sound_echo: ENTITY_ENDERMAN_DEATH
+
+  GraveDigger:
+    name: "§f§lGrave Digger"
+    rarity: "§3§lRARE"
+    material: NETHERITE_SHOVEL
+    custom_model_data: 1009
+    enchant_glow: false
+    lore:
+      - "§7Digs not for ore, but for futures buried alive."
+      - "§7Heavier than death itself."
+      - "§fPassive: §7Slow all enemies within 3 blocks"
+    passive:
+      particle: BLOCK_CRUMBLE
+      sound: BLOCK_GRAVEL_STEP
+    l_click:
+      name: "Ground Slam"
+      effect_type: AOE
+      damage: 6.0
+      range: 3.0
+      charge_cost: 1
+      cooldown: 5
+      effects:
+        - "SLOWNESS:3:60"
+        - "MINING_FATIGUE:1:80"
+      particle: BLOCK_CRUMBLE
+      sound_cast: BLOCK_GRAVEL_BREAK
+      sound_impact: ENTITY_PLAYER_ATTACK_SWEEP
+    r_click:
+      name: "Earth Prison"
+      effect_type: AOE
+      damage: 2.0
+      range: 5.0
+      charge_cost: 2
+      cooldown: 14
+      effects:
+        - "SLOWNESS:3:80"
+        - "MINING_FATIGUE:2:80"
+      particle: FALLING_DUST
+      sound_cast: BLOCK_STONE_BREAK
+    ultimate:
+      name: "Open the Grave"
+      effect_type: AOE
+      damage: 10.0
+      range: 6.0
+      charge_cost: 5
+      cooldown: 60
+      effects:
+        - "SLOWNESS:3:120"
+        - "WEAKNESS:2:100"
+        - "MINING_FATIGUE:2:100"
+      particle: BLOCK_CRUMBLE
+      sound_cast: ENTITY_WITHER_SPAWN
+      sound_impact: BLOCK_ANVIL_LAND
+      sound_echo: BLOCK_GRAVEL_BREAK
+
+  PhantomEdge:
+    name: "§d§lPhantom Edge"
+    rarity: "§5§lEPIC"
+    material: NETHERITE_SWORD
+    custom_model_data: 1010
+    enchant_glow: true
+    lore:
+      - "§7A blade seen only at the moment it strikes."
+      - "§7By then, it is already too late."
+      - "§dPassive: §5Grants brief invisibility after kill"
+    passive:
+      particle: SMOKE
+      sound: ENTITY_ENDERMAN_AMBIENT
+    l_click:
+      name: "Ghost Slash"
+      effect_type: STRIKE
+      damage: 7.0
+      range: 4.0
+      charge_cost: 1
+      cooldown: 3
+      effects:
+        - "GLOWING:1:60"
+      particle: SMOKE
+      sound_cast: ENTITY_WITHER_SKELETON_STEP
+      sound_impact: ENTITY_PLAYER_ATTACK_CRIT
+    r_click:
+      name: "Phase Walk"
+      effect_type: BLINK
+      damage: 0.0
+      range: 9.0
+      charge_cost: 2
+      cooldown: 10
+      effects:
+        - "SPEED:1:60"
+      particle: SMOKE
+      sound_cast: ENTITY_ENDERMAN_TELEPORT
+    ultimate:
+      name: "Phantom Barrage"
+      effect_type: AOE
+      damage: 11.0
+      range: 6.0
+      charge_cost: 5
+      cooldown: 65
+      effects:
+        - "BLINDNESS:1:80"
+        - "SLOWNESS:2:100"
+      particle: SQUID_INK
+      sound_cast: ENTITY_ENDERMAN_SCREAM
+      sound_impact: ENTITY_PLAYER_ATTACK_CRIT
+      sound_echo: ENTITY_ENDERMAN_DEATH
+
+  CursedCrown:
+    name: "§4§lCursed Crown"
+    rarity: "§6§lLEGENDARY"
+    material: NETHERITE_HELMET
+    custom_model_data: 1011
+    enchant_glow: true
+    lore:
+      - "§7A crown for those who rule through fear."
+      - "§7To wear it is to become the darkness."
+      - "§4Passive: §cDark aura weakens nearby attackers"
+    passive:
+      particle: SOUL_FIRE_FLAME
+      sound: ENTITY_WITHER_AMBIENT
+    l_click:
+      name: "Curse Pulse"
+      effect_type: AOE
+      damage: 4.0
+      range: 4.0
+      charge_cost: 1
+      cooldown: 5
+      effects:
+        - "WEAKNESS:2:80"
+        - "NAUSEA:1:60"
+      particle: SOUL_FIRE_FLAME
+      sound_cast: ENTITY_WITHER_AMBIENT
+      sound_impact: ENTITY_WITHER_HURT
+    r_click:
+      name: "Shadow Ward"
+      effect_type: AURA
+      damage: 0.0
+      range: 0.0
+      charge_cost: 2
+      cooldown: 16
+      effects:
+        - "RESISTANCE:1:100"
+        - "SPEED:1:100"
+      particle: SOUL
+      sound_cast: BLOCK_BEACON_ACTIVATE
+    ultimate:
+      name: "Reign of Darkness"
+      effect_type: AOE
+      damage: 10.0
+      range: 10.0
+      charge_cost: 5
+      cooldown: 80
+      effects:
+        - "WEAKNESS:3:120"
+        - "BLINDNESS:1:100"
+        - "NAUSEA:1:100"
+      particle: ASH
+      sound_cast: ENTITY_WITHER_SPAWN
+      sound_impact: ENTITY_WITHER_SHOOT
+      sound_echo: BLOCK_BEACON_DEACTIVATE
+
+  Bonecrusher:
+    name: "§e§lBonecrusher"
+    rarity: "§3§lRARE"
+    material: NETHERITE_AXE
+    custom_model_data: 1012
+    enchant_glow: false
+    lore:
+      - "§7Shatters armor like it was made of glass."
+      - "§7The sound it makes is not one you forget."
+      - "§ePassive: §6Passive armor penetration on hits"
+    passive:
+      particle: CRIT
+      sound: ITEM_AXE_SCRAPE
+    l_click:
+      name: "Shattering Blow"
+      effect_type: STRIKE
+      damage: 8.0
+      range: 3.0
+      charge_cost: 1
+      cooldown: 5
+      effects:
+        - "WEAKNESS:2:80"
+        - "MINING_FATIGUE:1:60"
+      particle: CRIT
+      sound_cast: ITEM_AXE_SCRAPE
+      sound_impact: BLOCK_ANVIL_LAND
+    r_click:
+      name: "Bone Shockwave"
+      effect_type: AOE
+      damage: 4.0
+      range: 5.0
+      charge_cost: 2
+      cooldown: 12
+      effects:
+        - "SLOWNESS:3:60"
+        - "WEAKNESS:1:80"
+      particle: BLOCK_CRUMBLE
+      sound_cast: BLOCK_ANVIL_LAND
+    ultimate:
+      name: "Obliterate"
+      effect_type: AOE
+      damage: 12.0
+      range: 5.0
+      charge_cost: 5
+      cooldown: 70
+      effects:
+        - "WEAKNESS:3:120"
+        - "SLOWNESS:3:100"
+        - "MINING_FATIGUE:2:100"
+      particle: CRIT
+      sound_cast: ENTITY_IRON_GOLEM_ATTACK
+      sound_impact: BLOCK_ANVIL_LAND
+      sound_echo: ENTITY_IRON_GOLEM_DEATH
+
+  Eclipse:
+    name: "§0§lEclipse"
+    rarity: "§6§lLEGENDARY"
+    material: NETHERITE_SWORD
+    custom_model_data: 1013
+    enchant_glow: true
+    lore:
+      - "§7When Eclipse is drawn, the sun turns away."
+      - "§7Reality itself becomes dark matter."
+      - "§0Passive: §8Permanent darkness aura (radius 6)"
+    passive:
+      particle: ASH
+      sound: ENTITY_ENDERMAN_AMBIENT
+    l_click:
+      name: "Dark Matter Slash"
+      effect_type: STRIKE
+      damage: 7.0
+      range: 5.0
+      charge_cost: 1
+      cooldown: 4
+      effects:
+        - "BLINDNESS:1:60"
+      particle: ASH
+      sound_cast: ENTITY_ENDERMAN_STARE
+      sound_impact: ENTITY_PLAYER_ATTACK_CRIT
+    r_click:
+      name: "Void Surge"
+      effect_type: BLINK
+      damage: 2.0
+      range: 8.0
+      charge_cost: 2
+      cooldown: 10
+      effects:
+        - "SPEED:2:80"
+      particle: PORTAL
+      sound_cast: ENTITY_ENDERMAN_TELEPORT
+    ultimate:
+      name: "Total Eclipse"
+      effect_type: AOE
+      damage: 12.0
+      range: 10.0
+      charge_cost: 5
+      cooldown: 90
+      effects:
+        - "BLINDNESS:2:120"
+        - "SLOWNESS:3:100"
+        - "WEAKNESS:2:100"
+      particle: ASH
+      sound_cast: ENTITY_WITHER_SPAWN
+      sound_impact: ENTITY_GENERIC_EXPLODE
+      sound_echo: ENTITY_ENDERMAN_DEATH
+
+  Demonheart:
+    name: "§c§lDemonheart"
+    rarity: "§5§lEPIC"
+    material: NETHERITE_CHESTPLATE
+    custom_model_data: 1014
+    enchant_glow: true
+    lore:
+      - "§7A demon was slain for this armor."
+      - "§7Its rage now fuels your survival."
+      - "§cPassive: §4Retaliate pulse when taking heavy damage"
+    passive:
+      particle: SOUL_FIRE_FLAME
+      sound: ENTITY_ZOMBIE_HURT
+    l_click:
+      name: "Demon Roar"
+      effect_type: AOE
+      damage: 5.0
+      range: 4.0
+      charge_cost: 1
+      cooldown: 5
+      effects:
+        - "WEAKNESS:1:60"
+        - "NAUSEA:1:40"
+      particle: SOUL_FIRE_FLAME
+      sound_cast: ENTITY_RAVAGER_ROAR
+      sound_impact: ENTITY_PLAYER_ATTACK_SWEEP
+    r_click:
+      name: "Hellborn Shield"
+      effect_type: AURA
+      damage: 0.0
+      range: 0.0
+      charge_cost: 2
+      cooldown: 18
+      effects:
+        - "RESISTANCE:2:120"
+        - "FIRE_RESISTANCE:1:120"
+      particle: LAVA
+      sound_cast: BLOCK_ANVIL_USE
+    ultimate:
+      name: "Demon Ascension"
+      effect_type: LIFESTEAL_AOE
+      damage: 10.0
+      range: 7.0
+      charge_cost: 5
+      cooldown: 75
+      effects:
+        - "STRENGTH:2:120"
+        - "RESISTANCE:1:120"
+        - "WEAKNESS:1:80"
+      particle: SOUL
+      sound_cast: ENTITY_WITHER_SPAWN
+      sound_impact: ENTITY_RAVAGER_ATTACK
+      sound_echo: ENTITY_RAVAGER_DEATH
+
+  BloodmoonScythe:
+    name: "§4§lBloodmoon Scythe"
+    rarity: "§6§lLEGENDARY"
+    material: NETHERITE_HOE
+    custom_model_data: 1015
+    enchant_glow: true
+    lore:
+      - "§7Only visible under a bloodmoon."
+      - "§7Those cut by it bleed eternally."
+      - "§4Passive: §cBleed stacks on consecutive hits"
+    passive:
+      particle: BLOCK_CRUMBLE
+      sound: ENTITY_PLAYER_ATTACK_SWEEP
+    l_click:
+      name: "Blood Reap"
+      effect_type: AOE
+      damage: 6.0
+      range: 4.0
+      charge_cost: 1
+      cooldown: 4
+      effects:
+        - "WITHER:1:80"
+        - "POISON:1:60"
+      particle: DUST
+      sound_cast: ENTITY_PLAYER_ATTACK_SWEEP
+      sound_impact: ENTITY_PLAYER_ATTACK_CRIT
+    r_click:
+      name: "Crimson Rush"
+      effect_type: BLINK
+      damage: 4.0
+      range: 7.0
+      charge_cost: 2
+      cooldown: 12
+      effects:
+        - "SPEED:2:80"
+      particle: DUST
+      sound_cast: ENTITY_BLAZE_SHOOT
+    ultimate:
+      name: "Festival of Blood"
+      effect_type: LIFESTEAL_AOE
+      damage: 12.0
+      range: 9.0
+      charge_cost: 5
+      cooldown: 85
+      effects:
+        - "WITHER:2:120"
+        - "POISON:2:100"
+        - "BLINDNESS:1:80"
+      particle: DUST
+      sound_cast: ENTITY_WITHER_SPAWN
+      sound_impact: ENTITY_GENERIC_EXPLODE
+      sound_echo: ENTITY_PHANTOM_DEATH
