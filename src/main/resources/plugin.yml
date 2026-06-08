@@ -1,0 +1,31 @@
+name: HeartlessSkills
+version: 1.0.0
+main: com.rpg.heartless.HeartlessPlugin
+api-version: '1.21'
+description: Dark RPG weapon skill system
+authors: [Afn_mc]
+softdepend: [floodgate, Geyser-Spigot]
+
+commands:
+  heartlessweapon:
+    description: Give a Heartless weapon to a player
+    usage: /heartlessweapon <player> <weaponId>
+    permission: heartless.admin.give
+  heartlessreload:
+    description: Reload HeartlessSkills config
+    usage: /heartlessreload
+    permission: heartless.admin.reload
+  heartlessgui:
+    description: Open weapon give selection GUI
+    usage: /heartlessgui
+    permission: heartless.admin.gui
+
+permissions:
+  heartless.admin.give:
+    default: op
+  heartless.admin.reload:
+    default: op
+  heartless.admin.gui:
+    default: op
+  heartless.use:
+    default: true
